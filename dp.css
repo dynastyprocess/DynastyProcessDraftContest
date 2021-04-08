@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1,h2,h3 {
+  font-weight: 700;
+}
+
+.card-title{
+  font-weight:700;
+}
+
+#box_inputs {
+  text-align: center;
+}
+
+#draftcontest_table,checkbox {
+  vertical-align: middle;
+}
