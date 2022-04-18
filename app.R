@@ -1,14 +1,18 @@
 options(dplyr.summarise.inform = FALSE)
 
+# fp_rookies <- ffpros::fp_rankings("rookies") |>
+#   select(Player = player_name, Position = pos, fantasypros_id) |>
+#   arrange(Position)
+# write_parquet(fp_rookies,"data/rookies.parquet")
 rookies <- read_parquet("data/rookies.parquet") %>% arrange(Position)
 teams <- read_parquet("data/teams.parquet") %>% pull(team)
 
-ui <- dashboardPage(
-  sidebar_collapsed = TRUE,
+ui <- dashboardPage(dark = NULL,
+  # sidebar_collapsed = TRUE,
   title = "Draft Contest",
-  navbar = ui_header("2021 Draft Contest - DynastyProcess.com"),
+  header = ui_header("2022 Draft Contest - DynastyProcess.com"),
   sidebar = ui_sidebar(
-    menuItem("Draft Contest", tabName = "draftcontest", icon = "hat-wizard"),
+    menuItem("Draft Contest", tabName = "draftcontest", icon = icon("hat-wizard")),
     external_menuItem("More by DynastyProcess", "https://dynastyprocess.com", icon = "quidditch")
   ),
   body = dashboardBody(
@@ -29,7 +33,7 @@ ui <- dashboardPage(
           hr(),
           fluidRow(
             column(3, textInput("entry_name", label = "Name")),
-            column(3, textInput("nickname", label = "Twitter/Reddit Handle")),
+            column(3, textInput("nickname", label = "Discord/Twitter Username")),
             column(3, textInput("email", label = "Email"))
           )
         ),
@@ -171,8 +175,7 @@ server <- function(input, output, session) {
     Sys.sleep(2)
 
     showModal(modalDialog(title = "Successfully saved to server!",
-                          shiny::markdown("Please make sure you [submit your entry fee](https://paypal.me/pools/c/8ypp5EC59j)
-                                          and include the your Twitter/Reddit handle in the payment details!")))
+                          shiny::markdown("Please make sure you submit a copy of your donation receipt (including receipt number) either to Discord or by email!")))
 
   })
 

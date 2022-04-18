@@ -26,6 +26,7 @@ suppressPackageStartupMessages({
 ui_header <- function(title, ...) {
   bs4Dash::dashboardHeader(
     skin = "dark",
+    status = "gray-dark",
     fixed = TRUE,
     border = TRUE,
     # compact = TRUE,

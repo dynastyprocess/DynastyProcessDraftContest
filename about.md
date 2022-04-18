@@ -1,4 +1,4 @@
-Welcome to the DynastyProcess 2021 NFL Draft Contest!
+Welcome to the DynastyProcess 2022 NFL Draft Contest!
 
 **CHALLENGE**
 
@@ -6,11 +6,15 @@ Welcome to the DynastyProcess 2021 NFL Draft Contest!
 
 **ENTRY FEE**
 
-* $5 ([payment link here](https://paypal.me/pools/c/8ypp5EC59j) - all proceeds get donated to [BlackGirlsCode.com](https://blackgirlscode.com))
+* A minimum of $5 donation to [Mercy Corps](https://www.mercycorps.org/), a humanitarian charity focused on the front lines of crisis, disaster, and poverty that is currently providing front-line aid in Ukraine, Romania, and Poland. 
+
+* Please submit a copy of the receipt to the #tdm-draftcontest channel on [The Dynasty Movement discord](https://thedynastymovement.com/discord) or by email to [draftcontest@tanho.ca](mailto://draftcontest@tanho.ca).
+
+The top TDM finisher will also receive a special flair!
 
 **PRIZE**
 
-* One year of [DLF Premium](https://dynastyleaguefootball.com)
+* A copy of the [Late Round Prospect Guide](https://lateround.com/#guides) with a pre/post NFL draft analysis
 
 **SCORING RULES**
 
