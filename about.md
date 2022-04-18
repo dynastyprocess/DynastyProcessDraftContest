@@ -8,7 +8,7 @@ Welcome to the DynastyProcess/TDM 2022 NFL Draft Contest!
 
 * A minimum of $5 donation to [Mercy Corps](https://www.mercycorps.org/), a humanitarian charity focused on the front lines of crisis, disaster, and poverty that is currently providing front-line aid in Ukraine, Romania, and Poland. 
 
-* Please submit a copy of the receipt to the #tdm-draftcontest channel on [The Dynasty Movement discord](https://thedynastymovement.com/discord) or by email to [draftcontest@tanho.ca](mailto://draftcontest@tanho.ca).
+* Please submit a copy of the receipt to the #tdm-draftcontest channel on [The Dynasty Movement discord](https://thedynastymovement.com/discord) or by email to [draftcontest @ tanho.ca](mailto://draftcontest@tanho.ca).
 
 The top TDM finisher will also receive a special flair!
 

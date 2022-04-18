@@ -171,7 +171,7 @@ server <- function(input, output, session) {
                   path = "storage",
                   partitioning = c("entry_email"),
                   hive_style = TRUE,
-                  basename_template = glue::glue("{input$entry_name}_{{i}}.parquet"))
+                  basename_template = glue::glue("{as.numeric(Sys.time())}_{{i}}.parquet"))
 
     Sys.sleep(2)
 
