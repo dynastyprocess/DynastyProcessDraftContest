@@ -1,4 +1,4 @@
-Welcome to the DynastyProcess 2022 NFL Draft Contest!
+Welcome to the DynastyProcess/TDM 2022 NFL Draft Contest!
 
 **CHALLENGE**
 
@@ -14,7 +14,7 @@ The top TDM finisher will also receive a special flair!
 
 **PRIZE**
 
-* A copy of the [Late Round Prospect Guide](https://lateround.com/#guides) with a pre/post NFL draft analysis
+* A copy of the predraft and postdraft [Late Round Prospect Guide](https://lateround.com/#guides) courtesy of JJ Zachariason!
 
 **SCORING RULES**
 

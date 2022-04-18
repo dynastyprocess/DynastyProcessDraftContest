@@ -7,10 +7,11 @@ options(dplyr.summarise.inform = FALSE)
 rookies <- read_parquet("data/rookies.parquet") %>% arrange(Position)
 teams <- read_parquet("data/teams.parquet") %>% pull(team)
 
-ui <- dashboardPage(dark = NULL,
-  # sidebar_collapsed = TRUE,
+ui <- dashboardPage(
+  # dark = NULL,
+  sidebar_collapsed = TRUE,
   title = "Draft Contest",
-  header = ui_header("2022 Draft Contest - DynastyProcess.com"),
+  navbar = ui_header("2022 Draft Contest - DynastyProcess.com"),
   sidebar = ui_sidebar(
     menuItem("Draft Contest", tabName = "draftcontest", icon = icon("hat-wizard")),
     external_menuItem("More by DynastyProcess", "https://dynastyprocess.com", icon = "quidditch")
@@ -50,8 +51,8 @@ ui <- dashboardPage(dark = NULL,
           style = "text-align:center;"
           )
         ),
-        br(),
-        actionButton("debug", label = "debug")
+        # br(),
+        # actionButton("debug", label = "debug")
       )
     )
   )
