@@ -12,7 +12,7 @@ read_entries <- function() {
 }
 
 read_correct <- function(){
-  read.csv("data/correct.csv",stringsAsFactors = FALSE) %>%
+  data.table::fread("data/correct.csv") %>%
     rename(Top64 = top64,
            DraftedBy = team) %>%
     mutate(Top64 = as.logical(Top64) %>% replace_na(FALSE))
@@ -52,5 +52,14 @@ summarise_entries <- function(check){
       Score = sum(Score, na.rm = TRUE)
     ) %>%
     arrange(-Score,-DraftedByScore)
+}
+
+entry_display <- function(entries,scores){
+  entry_ranks <- levels(scores %>% pull(EntryNickname) %>% as_factor())
+  entries %>%
+    mutate(EntryNickname = EntryNickname %>%
+             as_factor() %>%
+             forcats::fct_relevel(entry_ranks)) %>%
+    arrange(EntryNickname)
 }
 

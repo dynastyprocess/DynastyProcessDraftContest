@@ -10,6 +10,7 @@ teams <- read_parquet("data/teams.parquet") %>% pull(team)
 
 entries <- compare_entries()
 scores <- summarise_entries(entries)
+entries <- entry_display(entries,scores)
 
 ui <- dashboardPage(
   # dark = NULL,
@@ -18,6 +19,7 @@ ui <- dashboardPage(
   navbar = ui_header("2022 Draft Contest - DynastyProcess.com"),
   sidebar = ui_sidebar(
     # entry_tab(id = "entries"),
+    summary_tab(),
     external_menuItem("More by DynastyProcess", "https://dynastyprocess.com", icon = "quidditch")
   ),
   body = dashboardBody(
@@ -28,6 +30,7 @@ ui <- dashboardPage(
     use_sever(),
     tabItems(
       # entry_ui(id = "entries")
+      summary_ui()
     )
   )
 )
@@ -39,6 +42,7 @@ server <- function(input, output, session) {
 
   # entry_server(id = "entries", rookies = rookies, teams = teams)
 
+  summary_server(entries,scores)
 }
 
 shinyApp(ui, server)
