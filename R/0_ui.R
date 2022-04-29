@@ -15,6 +15,7 @@ suppressPackageStartupMessages({
   library(waiter)
   library(sever)
   library(tanmisc)
+  library(metathis)
 
   # Data output
   library(writexl)
@@ -116,4 +117,18 @@ box_inputs <- function(){
         actionButton('load','Load Ranking Set!',icon = icon('rocket'))
       )
   )
+}
+
+meta_tag <- function(){
+  meta() %>%
+    meta_social(
+      title = "Draft Contest - DynastyProcess.com",
+      description = "Predict the first two rounds of the draft, support charity, and win a prize!",
+      url = "https://apps.dynastyprocess.com/draftcontest",
+      image = "https://github.com/dynastyprocess/graphics/blob/main/.dynastyprocess/logohexonly.png?raw=true",
+      image_alt = "DynastyProcess logo",
+      twitter_creator = "@_TanHo",
+      twitter_card_type = "summary",
+      twitter_site = "@DynastyProcess"
+    )
 }

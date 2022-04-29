@@ -1,4 +1,4 @@
-Welcome to the DynastyProcess/TDM 2022 NFL Draft Contest!
+Welcome to the DynastyProcess 2022 NFL Draft Contest!
 
 **CHALLENGE**
 
@@ -12,9 +12,12 @@ Welcome to the DynastyProcess/TDM 2022 NFL Draft Contest!
 
 The top TDM finisher will also receive a special flair!
 
-**PRIZE**
+**PRIZES**
+
+Top finishers will get their choice of:
 
 * A copy of the predraft and postdraft [Late Round Prospect Guide](https://lateround.com/#guides) courtesy of JJ Zachariason!
+* A one year membership to [Campus 2 Canton](https://campus2canton.com), courtesy of the awesome C2C team!
 
 **SCORING RULES**
 
@@ -22,4 +25,8 @@ The top TDM finisher will also receive a special flair!
 * Two (2) points for each correct player-team match
 * Lose one (-1) point for each selection that does not go in the top 64
 
-Ties broken by most correct player-team matches. Good luck!
+Don't select teams for any players outside of the top 64. Ties broken by most correct player-team matches. Good luck!
+
+**DEADLINE**
+
+Entry and donation receipts must both be submitted before the kickoff of the NFL draft on Thursday.
