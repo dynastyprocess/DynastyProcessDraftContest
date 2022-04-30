@@ -26,16 +26,19 @@ compare_entries <- function(){
     left_join(correct, by = c("Player","Position"),suffix = c("_entry","_correct")) %>%
     mutate(
       Top64 = as.numeric(Top64_entry == Top64_correct),
+      Miss64 = -as.numeric(Top64_entry != Top64_correct),
       DraftedBy = as.numeric(DraftedBy_entry == DraftedBy_correct),
-      Score = Top64 + DraftedBy * 2
+      Score = Top64 + DraftedBy * 2 + Miss64
     ) %>%
     select(
       EntryNickname = entry_nickname,
+      EntryTimestamp = entry_date,
       Player,
       Position,
       TeamGuess = DraftedBy_entry,
       TeamActual = DraftedBy_correct,
       Top64Score = Top64,
+      Miss64Score = Miss64,
       DraftedByScore = DraftedBy,
       Score
     )
@@ -45,13 +48,15 @@ compare_entries <- function(){
 
 summarise_entries <- function(check){
   check %>%
-    group_by(EntryNickname) %>%
+    group_by(EntryNickname, EntryTimestamp) %>%
     summarise(
-      Top64Score = sum(Top64Score,na.rm = TRUE),
-      DraftedByScore = sum(DraftedByScore, na.rm = TRUE),
+      Top64 = sum(Top64Score,na.rm = TRUE),
+      Miss64 = sum(Miss64Score, na.rm = TRUE),
+      TeamCorrect = sum(DraftedByScore, na.rm = TRUE),
       Score = sum(Score, na.rm = TRUE)
     ) %>%
-    arrange(-Score,-DraftedByScore)
+    ungroup() %>%
+    arrange(-Score, -TeamCorrect, EntryTimestamp)
 }
 
 entry_display <- function(entries,scores){

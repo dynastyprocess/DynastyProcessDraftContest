@@ -47,7 +47,7 @@ summary_server <- function(entries,scores,id="summary"){
             )
           ) %>%
           formatStyle(
-            columns = 0:3,
+            columns = 0:5,
             valueColumns = "Score",
             backgroundColor = styleInterval(
               quantile(scores$Score,
@@ -63,12 +63,12 @@ summary_server <- function(entries,scores,id="summary"){
             class = 'compact stripe nowrap',
             rownames = FALSE,
             options = list(
-              paging = FALSE,
-              scrollX = TRUE
+              scrollX = TRUE,
+              pageLength = 50
             )
           ) %>%
           formatStyle(
-            columns = 0:7,
+            columns = 0:9,
             valueColumns = "Score",
             backgroundColor = styleInterval(
               quantile(entries$Score,

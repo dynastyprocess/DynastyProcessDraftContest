@@ -25,7 +25,7 @@ Top finishers will get their choice of:
 * Two (2) points for each correct player-team match
 * Lose one (-1) point for each selection that does not go in the top 64
 
-Don't select teams for any players outside of the top 64. Ties broken by most correct player-team matches. Good luck!
+Don't select teams for any players outside of the top 64. Ties broken by most correct player-team matches and then by earliest submission timestamp. Good luck!
 
 **DEADLINE**
 
