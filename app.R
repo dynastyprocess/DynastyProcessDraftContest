@@ -18,8 +18,8 @@ ui <- dashboardPage(
   title = "Draft Contest",
   navbar = ui_header("2022 Draft Contest - DynastyProcess.com"),
   sidebar = ui_sidebar(
-    # entry_tab(id = "entries"),
     summary_tab(),
+    # entry_tab(id = "entries"),
     external_menuItem("More by DynastyProcess", "https://dynastyprocess.com", icon = "quidditch")
   ),
   body = dashboardBody(
@@ -29,7 +29,7 @@ ui <- dashboardPage(
     waiter_on_busy(html = spin_dots(), color = transparent(0.3)),
     use_sever(),
     tabItems(
-      # entry_ui(id = "entries")
+      # entry_ui(id = "entries"),
       summary_ui()
     )
   )

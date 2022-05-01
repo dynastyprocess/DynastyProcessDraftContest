@@ -14,7 +14,7 @@ The top TDM finisher will also receive a special flair!
 
 **PRIZES**
 
-Top finishers will get their choice of:
+Top finishers will get one of:
 
 * A copy of the predraft and postdraft [Late Round Prospect Guide](https://lateround.com/#guides) courtesy of JJ Zachariason!
 * A one year membership to [Campus 2 Canton](https://campus2canton.com), courtesy of the awesome C2C team!

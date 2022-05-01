@@ -10,6 +10,14 @@ summary_ui <- function(id = "summary"){
     tabName = ns("tab"),
     box(
       width = 12,
+      inputId = ns("box-inputs"),
+      status = "danger",
+      title = "ABOUT",
+      closable = FALSE,
+      includeMarkdown("about.md")),
+    br(),
+    box(
+      width = 12,
       status = "danger",
       closable = FALSE,
       title = "Summary",
