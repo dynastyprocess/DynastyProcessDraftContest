@@ -8,9 +8,15 @@ options(dplyr.summarise.inform = FALSE)
 rookies <- read_parquet("data/rookies.parquet") %>% arrange(Position)
 teams <- read_parquet("data/teams.parquet") %>% pull(team)
 
-entries <- compare_entries()
-scores <- summarise_entries(entries)
-entries <- entry_display(entries,scores)
+# entries <- compare_entries()
+# scores <- summarise_entries(entries)
+# entries <- entry_display(entries,scores)
+#
+# entries %>% write_parquet("data/entries_2022.parquet")
+# scores %>% write_parquet("data/scores_2022.parquet")
+
+entries <- read_parquet("data/entries_2022.parquet")
+scores <- read_parquet("data/scores_2022.parquet")
 
 ui <- dashboardPage(
   # dark = NULL,
